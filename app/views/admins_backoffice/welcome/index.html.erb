@@ -1,0 +1,12 @@
+<h1>WELCOME TO ADMINS BACKOFFICE!!!</h1>
+<p>LETS GO!!!!!!!</p>
+
+<p>Usuario Logado</p>
+<%= current_user.inspect %>
+
+<p> Admin Logado</p>
+<%= current_admin.inspect %>
+
+<p>
+<%= link_to "Log Out", destroy_admin_session_path, data: { "turbo-method": :delete }%>
+</p>
